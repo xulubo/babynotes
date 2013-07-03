@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+ 	android:layout_height="fill_parent"
+ 	android:orientation="vertical"	
+ >
+    	<!-- Time -->
+  	    <LinearLayout 
+			android:orientation="horizontal"	
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0">
+			<TextView android:id="@+id/event_date"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="2011-01-01" 
+				android:layout_weight="10"
+				android:gravity="center"
+				android:textSize="20dp"/>"
+			<TextView android:id="@+id/event_time"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="22:22" 
+				android:layout_weight="5"
+				android:gravity="center"
+				android:textSize="20dp"/>
+		</LinearLayout>
+
+    	<!-- Medicine -->
+  	    <LinearLayout 
+			android:orientation="horizontal"	
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0">
+				<MultiAutoCompleteTextView 
+					android:layout_width="0dip"
+					android:layout_height="fill_parent" 
+					android:layout_weight="1"
+					android:textColor="#000000"
+					android:text="发烧"
+					android:hint="发烧"
+					android:id="@+id/name"
+					android:layout_gravity="center_vertical"
+				/>
+				<Button android:id="@+id/select_medicine"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="选择" 
+					android:layout_weight="0"/>
+		</LinearLayout>
+  	    <LinearLayout 
+			android:orientation="horizontal"	
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0">
+				<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="体温" 
+					android:layout_weight="0"/>
+				<EditText android:id="@+id/temperature"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="" 
+					android:layout_weight="1"/>
+				<Spinner android:id="@+id/amount_unit"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="毫克" 
+					android:layout_weight="0"/>
+		</LinearLayout>  
+
+  	    <!-- memo -->
+  	    <LinearLayout 
+			android:orientation="horizontal"	
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0">
+				<EditText 
+					android:layout_width="0dip"
+					android:layout_height="fill_parent" 
+					android:layout_weight="1"
+					android:textColor="#000000"
+					android:hint="备注信息"
+					android:id="@+id/event_memo"
+					android:layout_gravity="center_vertical"
+				/>
+
+		</LinearLayout>
+		 
+		
+		<!-- blank -->
+  	    <LinearLayout 
+			android:orientation="horizontal"	
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+		</LinearLayout>
+		
+</LinearLayout>

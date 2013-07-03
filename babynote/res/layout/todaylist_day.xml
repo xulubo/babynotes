@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/day_item_container"
+	android:background="@color/background_grey" android:focusable="true"
+	android:descendantFocusability="afterDescendants" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:cacheColorHint="@color/background_grey"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<include android:id="@id/day_item_1" android:nextFocusDown="@id/day_item_2"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		layout="\@layout/todaylist_day_item" />
+	<include android:id="@id/day_item_2" android:nextFocusUp="@id/day_item_1"
+		android:nextFocusDown="@id/day_item_3" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" layout="\@layout/todaylist_day_item" />
+	<include android:id="@id/day_item_3" android:nextFocusUp="@id/day_item_2"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		layout="\@layout/todaylist_day_item" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/day_container"
+	android:focusable="true" android:visibility="gone" android:clickable="true"
+	android:descendantFocusability="blocksDescendants"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:minHeight="52.0dip" xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:orientation="vertical"
+		android:id="@id/day_item_left_column" android:paddingLeft="15.0dip"
+		android:paddingTop="8.0dip" android:paddingRight="13.0dip"
+		android:paddingBottom="8.0dip" android:layout_width="84.0dip"
+		android:layout_height="wrap_content" android:layout_weight="0.0">
+		<CheckBox android:id="@id/activity_checkbox"
+			android:visibility="gone" android:layout_width="47.0dip"
+			android:layout_height="42.0dip" android:button="@drawable/checklist_button_todo"
+			android:layout_centerVertical="true" />
+		<TextView android:textSize="12.0dip" android:typeface="sans"
+			android:textColor="@color/mid_grey" android:id="@id/day_label"
+			android:visibility="gone" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0" />
+		<TextView android:textSize="12.0dip" android:typeface="sans"
+			android:textColor="@android:color/black" android:id="@id/days_togo_label"
+			android:paddingTop="3.0dip" android:visibility="gone"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1.0" />
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:id="@id/day_right_outer_container" android:paddingTop="8.0dip"
+		android:paddingBottom="8.0dip" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1.0">
+		<ImageView android:id="@id/artifact_divider"
+			android:paddingBottom="8.0dip" android:visibility="gone"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:src="@drawable/divider" />
+		<LinearLayout android:orientation="horizontal"
+			android:id="@id/day_right_inner_container" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout android:gravity="center_vertical"
+				android:orientation="vertical" android:id="@id/day_item_right_column"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:minHeight="42.0dip" android:layout_weight="1.0">
+				<!--include layout="@layout/todaylist_day_item_thumbnail" /-->
+				<TextView android:textSize="12.0dip" android:typeface="sans"
+					android:textColor="@color/mid_blue" android:id="@id/artifact_category_label"
+					android:paddingBottom="2.0dip" android:visibility="gone"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:textSize="15.0dip" android:textColor="@android:color/black"
+					android:gravity="center_vertical" android:id="@id/artifact_title_label"
+					android:visibility="gone" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:textSize="15.0dip" android:textColor="@color/mid_grey"
+					android:id="@id/artifact_teaser"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+			<FrameLayout android:paddingLeft="8.0dip"
+				android:paddingRight="8.0dip" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:layout_weight="0.0">
+				<ImageView android:gravity="center_vertical"
+					android:layout_width="wrap_content" android:layout_height="fill_parent"
+					android:src="@drawable/arti_button_chevron_blue" />
+			</FrameLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

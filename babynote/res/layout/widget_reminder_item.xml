@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.year11.babynote.widget.SingleAlarmView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_alarm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:longClickable="false"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:saveEnabled="false" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dip"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:descendantFocusability="afterDescendants"
+        >
+    
+    <ImageView
+    	android:id="@+id/set_alarm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="center"
+        android:background="@drawable/hangout_background"
+        android:src="@drawable/other"/>
+                
+    <cn.year11.babynote.widget.CheckableLinearLayout
+    	android:id="@+id/timer_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    	android:background="@drawable/single_alarm_selector"   
+    	android:clickable="false"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+            	android:id="@+id/icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/alarm_pressed" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="5dip"
+                    android:text="洗奶瓶"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/time_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:text="开始时间: 10:55:00"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/live_time_label"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="05:00"
+                android:textColor="@android:color/black"
+                android:textSize="35sp" />
+        </LinearLayout>
+    </cn.year11.babynote.widget.CheckableLinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cover"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="#90000000" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/stop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/stop1" />
+
+            <ImageView
+                android:id="@+id/pause"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/video_overlay" />
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/close" />
+
+        </LinearLayout>
+    </FrameLayout>
+    </FrameLayout>
+</cn.year11.babynote.widget.SingleAlarmView>

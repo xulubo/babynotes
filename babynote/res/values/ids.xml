@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <item type="id" name="day_item_left_column">false</item>
+    <item type="id" name="activity_checkbox">false</item>
+    <item type="id" name="day_label">false</item>
+    <item type="id" name="days_togo_label">false</item>
+    <item type="id" name="day_right_outer_container">false</item>
+    <item type="id" name="artifact_divider">false</item>
+    <item type="id" name="day_right_inner_container">false</item>
+    <item type="id" name="day_item_right_column">false</item>
+    <item type="id" name="artifact_category_label">false</item>
+    <item type="id" name="artifact_title_label">false</item>    
+    <item type="id" name="artifact_teaser">false</item>
+    <item type="id" name="day_container">false</item>
+    <item type="id" name="day_item_container">false</item>
+    <item type="id" name="day_item_1">false</item>
+    <item type="id" name="day_item_2">false</item>
+    <item type="id" name="day_item_3">false</item>
+    <item type="id" name="week_container">false</item>
+    <item type="id" name="weeks_label">false</item>
+    <item type="id" name="week_label_background">false</item>
+    <item type="id" name="week_label">false</item>    
+    <item type="id" name="artifact_thumbnail">false</item>    
+    <item type="id" name="note_snippet">false</item>    
+    <item type="id" name="time_label">false</item>    
+    <item type="id" name="note_divider">false</item>    
+    <item type="id" name="day_divider">false</item>    
+    <item type="id" name="event_memo">false</item>    
+    <item type="id" name="food_name">false</item>    
+    
+</resources>

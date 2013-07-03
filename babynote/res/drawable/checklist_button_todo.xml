@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/checklist_button_todo_checked" />
+    <item android:state_checked="false" android:drawable="@drawable/checklist_button_todo_unchecked" />
+</selector>

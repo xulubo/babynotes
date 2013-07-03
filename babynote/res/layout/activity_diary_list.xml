@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Title Bar -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/background_grey"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/change_diaper"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="0"
+            android:background="@drawable/blue"
+            android:scaleType="fitXY"
+            android:src="@drawable/diaper" />
+
+        <ImageButton
+            android:id="@+id/feeding"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="0"
+            android:background="@drawable/blue"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottle"
+            android:text="喂养" />
+
+        <ImageButton
+            android:id="@+id/take_medicine"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="0"
+            android:background="@drawable/blue"
+            android:scaleType="fitXY"
+            android:src="@drawable/medicine"
+            android:text="喂药" />
+
+        <ImageButton
+            android:id="@+id/take_vaccine"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="0"
+            android:background="@drawable/blue"
+            android:scaleType="fitXY"
+            android:src="@drawable/vaccine"
+            android:text="防疫" />
+
+        <ImageButton
+            android:id="@+id/health_condition"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="0"
+            android:background="@drawable/blue"
+            android:scaleType="fitXY"
+            android:src="@drawable/health"
+            android:text="健康" />
+
+        <ImageButton
+            android:id="@+id/growth_data"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="0"
+            android:background="@drawable/blue"
+            android:scaleType="fitXY"
+            android:src="@drawable/growth"
+            android:text="成长" />
+    </LinearLayout>
+
+    <com.markupartist.android.widget.PullToRefreshListView
+        android:id="@+id/eventlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="false"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@drawable/divider"
+        android:dividerHeight="1.0dip"
+        android:focusable="false" />
+
+    <!-- bottom toolbar -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="功能" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/note"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint="随便写点东西吧"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/save_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="保存" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="恢复" />
+            
+        <Button
+            android:id="@+id/sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="备份" />
+            
+        <Button
+            android:id="@+id/take_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="拍照" />
+
+        <Button
+            android:id="@+id/record_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="录音" />
+        <TextView 
+            android:id="@+id/voice_info"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            />
+    </LinearLayout>
+
+</LinearLayout>

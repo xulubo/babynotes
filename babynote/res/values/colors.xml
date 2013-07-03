@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="solid_red">#ffff0000</color>
+	<color name="solid_blue">#ff0000ff</color>
+	<color name="solid_green">#ff00ff00</color>
+	<color name="solid_yellow">#ffffff00</color>
+	<color name="background_blue">#ffedf7f8</color>
+	<color name="background_grey">#fffafafa</color>
+	<color name="current_day_gradient_start">#ffffffff</color>
+	<color name="current_day_gradient_end">#fff7efaa</color>
+	<color name="text_blue">#ff028c9b</color>
+	<color name="header_gray">#ff58595b</color>
+	<color name="mid_grey">#ff7f7f7f</color>
+	<color name="mid_blue">#ff307394</color>
+	<color name="mid_green">#ff67ad00</color>
+	<color name="dark_green">#ff165c00</color>
+	<color name="selector_blue">#ffc2efef</color>
+	<color name="widget_gray">#ff666666</color>
+	<color name="tab_focused_start">#ff5cbeca</color>
+	<color name="tab_focused_end">#ff009098</color>
+	<color name="tab_pressed_start">#ff6f6f6f</color>
+	<color name="tab_pressed_end">#ff3f3f3f</color>
+	<color name="tab_selected_start">#ff5cbeca</color>
+	<color name="tab_selected_end">#ff009098</color>
+	<color name="tab_unselected_start">#ff3f3f3f</color>
+	<color name="tab_unselected_end">#ff000000</color>
+	<color name="transparent_color">#00FFFFFF</color>
+	<color name="paint_background_color">#FF29292D</color>
+	<color name="voice_progress_color">#FF0D57C6</color>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="数据备份设置">
+		<CheckBoxPreference android:key="enable_auto_backup"
+			android:title="允许自动备份数据"
+			android:summary="自动将数据备份至支持imap协议的私人邮箱"
+			android:persistent="true"
+			android:defaultValue="false"/>
+
+		<CheckBoxPreference android:key="backup_via_wifi"
+			android:title="通过WIFI进行备份"
+			android:summary="仅在连接到WIFI网络时进行自动数据备份"
+			android:persistent="true"
+			android:dependency="enable_auto_backup"
+			android:defaultValue="true"/>
+
+		<ListPreference android:key="mailbox_provider"
+			android:title="邮件服务器"
+			android:summary="选择邮箱提供商"
+			android:persistent="true"
+			android:entries="@array/mailbox_list_preference"
+			android:entryValues="@array/mailbox_list_preference_values"
+			android:dependency="enable_auto_backup"
+			/>
+			
+		<EditTextPreference android:key="login_user"
+			android:title="用户名"
+			android:summary="邮箱的登陆用户名"
+			android:singleLine="true"
+			android:dialogMessage="输入用户名"
+			android:dependency="enable_auto_backup"
+			android:persistent="true"/>
+			
+		<EditTextPreference android:key="login_password"
+			android:title="密码"
+			android:summary="邮箱的登录密码"
+			android:singleLine="true"
+			android:password="true"
+			android:dialogMessage="输入密码"
+			android:dependency="enable_auto_backup"
+			android:persistent="true"/>
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/pref_category_other">
+    <CheckBoxPreference
+      android:key="@string/pref_show_persistent_notification"
+      android:title="@string/pref_show_persistent_notification_title"
+      android:summaryOn="@string/pref_show_persistent_notification_summaryon"
+      android:summaryOff="@string/pref_show_persistent_notification_summaryoff"
+      android:defaultValue="true" />
+  </PreferenceCategory>
+</PreferenceScreen>

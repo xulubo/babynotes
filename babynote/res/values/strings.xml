@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">有娃日记</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_insert">Add note</string>
+    <string name="menu_revert">Revert</string>
+    <string name="menu_discard">Discard</string>
+
+    <string name="resolve_edit">Edit note</string>
+    <string name="resolve_title">Edit title</string>  
+
+    <string name="title_create">Create note</string>
+    <string name="title_edit">Edit note</string>
+	<string name="title_notes_list">有娃日记</string>   
+	<string name="title_note">Note</string>  
+	<string name="title_edit_title">Note title:</string>  
+		
+	<string name="button_ok">OK</string>  
+	
+	<string name="error_title">Error</string>
+	<string name="error_message">Error loading note</string>
+		
+	<string name="capture_image">拍照</string>
+	<string name="record_voice">录音</string>
+	<string name="week_7">胎儿现在大约有1.6厘米长，大概相当于一个芸豆的大小。虽然胎儿会经常移动和变换位置，但是还要再过几周，你才能感觉到他在子宫内的运动。胎儿的胚胎尾部正在消失，眼睑几乎可以盖住眼睛，手指和脚趾长得更长，尽管还有点儿连在一起。胎儿的胳膊也变长了，手可以在手腕的地方弯曲活动。现在他的膝关节和肘关节已经形成，也能够弯曲，他的双脚可以在身体前面碰在一起了。随着躯干的伸展，胎儿的头部更加直立。呼吸管从喉部延伸到正在发育的肺部的分支。大脑中的神经元也开始扩展并相互连接，构成最初的神经线路。虽然你可能非常想知道宝宝的性别，但现在宝宝的外生殖器还没发育完全，还不能看出你怀的是男孩还是女孩。 </string>
+	
+    <string name="fetaldev_webview_content_data">&lt;?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?> &lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"> &lt;html xmlns=\"http://www.w3.org/1999/xhtml\"> &lt;head> &lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\" /> &lt;!-- Specific viewport settings inserted here --> %1$s &lt;link href=\"file:///android_asset/css/page/mobile/fetaldev.css\" rel=\"stylesheet\" type=\"text/css\" media=\"screen\" /> &lt;link href=\"file:///android_asset/css/page/mobile/button-mobile.css\" rel=\"stylesheet\" type=\"text/css\" media=\"screen\" /> &lt;script language=\"javascript\" src=\"file:///android_asset/js/3rdParty/jquery/jquery-1.4.4.min.js\" type=\"text/javascript\">&lt;/script> &lt;script language=\"javascript\" src=\"file:///android_asset/js/mobile/fetaldev.js\" type=\"text/javascript\"> &lt;/script> &lt;/head> &lt;body style=\"margin: 0px\"> &lt;div id=development_gallery> &lt;div id=\"devphotos\"> &lt;div id=\"devphotos_text\">%3$s&lt;/div> &lt;img border=\"0\" name=\"switch\" src=\"\" > &lt;/div> &lt;/div> &lt;!-- Specific week developmentData inserted here --> %2$s &lt;/body> &lt;/html></string>
+    <string name="fetaldev_webview_viewport">&lt;meta name=\"viewport\" content=\"target-densitydpi=medium-dpi, width=device-width, height=device-height, user-scalable=no\" /></string>
+    <string name="fetaldev_webview_devphotos_text">Your baby week %1$s. Press a button above for more information.</string>
+
+    <string name="app_short_name">Pregnancy</string>
+    <string name="empty">Nothing to display.</string>
+    <string name="splash_title">Starting</string>
+    <string name="splash_text">Preparing Pregnancy Data</string>
+    <string name="video_wait_text">Preparing Video</string>
+    <string name="duedate_label">Due Date:</string>
+    <string name="due_date_selection_known_due_date">If you know your due date, set it here</string>
+    <string name="due_date_selection_known_set_known_due_date">I know my due date.</string>
+    <string name="due_date_selection_known_period_start_date">If you know the start date of your last period, set it here</string>
+    <string name="due_date_selection_known_set_known_period_start_date">Please enter the first day of your last period.</string>
+    <string name="due_date_select_a_date">Select a date</string>
+    <string name="due_date_selection_too_far_in_future">Oops! That\'s not a valid due date. Please try again.</string>
+    <string name="due_date_selection_too_far_in_past">Oops! That\'s not a valid due date. Please try again.</string>
+    <string name="due_date_selection_period_start_too_far_in_future">Oops! That\'s not a valid due date. Please try again.</string>
+    <string name="due_date_selection_period_start_too_far_in_past">Oops! That\'s not a valid due date. Please try again.</string>
+    <string name="me_your_duedate">Your Due Date</string>
+    <string name="me_your_pregnancy">Your Pregnancy</string>
+    <string name="me_pregnancy_checklist">Pregnancy Checklist</string>
+    <string name="menu_settings">Settings</string>
+    <string name="post_email">E-mail address</string>
+    <string name="post_email_instructions">Join BabyCenter and get weekly e-mails about your pregnancy &lt;b>(optional)&lt;/b></string>
+    <string name="post_privacy_policy_label">Privacy Policy</string>
+    <string name="post_terms_label">Terms of Use</string>
+    <string name="dialog_title_reset_all">Reset All</string>
+    <string name="dialog_text_reset_all">To remove all of the information that you\'ve entered, and start the application over, press the Reset Button below</string>
+    <string name="dialog_reset_button">Reset</string>
+    <string name="dialog_cancel_button">Cancel</string>
+    <string name="start_button">Start</string>
+    <string name="me_view_congrats_weeks_pregnant">&lt;b>Congratulations! You are %1$s weeks pregnant.&lt;/b></string>
+    <string name="my_birth_club">MY BIRTH CLUB</string>
+    <string name="this_weeks_activity">THIS WEEK\'S ACTIVITY</string>
+    <string name="widget_size_of">Your baby is the size of a %1$s</string>
+    <string name="widget1_name">BabyCenter® My Pregnancy Today</string>
+    <string name="widget1_loading">BabyCenter®\nMy Pregnancy Today\nloading today\'s activity…</string>
+    <string name="widget1_noduedate">Please set your due date in the BabyCenter® My Pregnancy Today app. Click here.</string>
+    <string name="widget1_error">No activity found</string>
+    <string name="widget1_yourpreg">Your pregnancy:</string>
+    <string name="widget1_week">Week %1$d</string>
+    <string name="widget1_daystogo_n">%1$d days to go!</string>
+    <string name="widget1_daystogo_1">1 day to go!</string>
+    <string name="widget1_daystogo_0">Due date today!</string>
+    <string name="widget1_daystogo_neg">Due date passed!</string>
+    <string name="todayview_daystogo_n">%1$d days to go</string>
+    <string name="date_format">EEE\nMMM d</string>
+    <string name="prod_omniture_suite">babycentercom</string>
+    <string name="test_omniture_suite">babycenterqa</string>
+    <string name="no_network_msg_video">Network connectivity is required to play videos.</string>
+    <string name="notification_weekly_title">Your baby is now %1$d weeks old</string>
+    <string name="notification_daily_title">Week %1$d: %2$s</string>
+    <string name="pref_category_notification">Notifications</string>
+    <string name="pref_notification_title">Reminder Notifications</string>
+    <string name="pref_notification_summary">Specify how often the app will send you reminder notifications.</string>
+    <string name="pref_notification_dialog_title">Send reminder notifications</string>
+    <string name="pref_notification_now_title">Sample Today\'s Notification</string>
+    <string name="pref_notification_now_summary">Send today\'s reminder notification now.</string>
+    <string name="pref_category_more">More</string>
+    <string name="pref_reset_title">Reset All</string>
+    <string name="pref_reset_summary">Clicking this will remove all data.</string>
+    <string name="pref_about_title">About My Pregnancy Today</string>
+    <string name="about_title">About My Pregnancy Today</string>
+    <string name="about_version">Version: %1$s, %2$s build: %3$s %4$s&lt;br/>Date: %5$tc</string>
+    <string name="about_babycenter_title">About BabyCenter</string>
+    <string name="about_babycenter_body">BabyCenter® – the #1 pregnancy and parenting destination worldwide – reaches more than 8 million moms in the United States and more than 20 million moms monthly in 22 markets from Australia to India to China. BabyCenter is the world’s partner in parenting, providing moms everywhere with trusted advice, friendship with other moms, and support at every stage of their child’s development. We understand that every family is different, and we give parents the information they need to make decisions that are right for them and their family.</string>
+    <string name="about_app_title">About BabyCenter My Pregnancy Today</string>
+    <string name="about_app_body">BabyCenter My Pregnancy Today is the most comprehensive daily pregnancy app. Simply enter your baby\'s due date and My Pregnancy Today turns your phone into an expert guide for your exact day of pregnancy. Get a daily update on your babys development, access award-winning videos, and feel more prepared with a handy checklist of pregnancy to-do\'s. All information is approved by the BabyCenter Medical Advisory Board.</string>
+    <string name="about_questions">Questions? Contact us at customerservice@babycenter.com.</string>
+    <string name="about_copyright">All contents copyright ©BabyCenter LLC, 1997-%1$s, All rights reserved.</string>
+    <string name="about_development">Developed in partnership with\nWillowTree Apps</string>
+    <string name="prod_email_registration_base">https://www.babycenter.com</string>
+    <string name="test_email_registration_base">https://stag.babycenter.com</string>
+    <string name="privacy_policy_url">http://www.babycenter.com/help-privacy</string>
+    <string name="terms_url">http://www.babycenter.com/help-aboutus-terms</string>
+    <string name="birth_club_date_format">yyyy-MM-dd</string>
+    <string name="birth_club">http://www.babycenter.com/mobileBirthClub.htm?dueDate=%1$s</string>
+    <string name="wta_url">http://www.willowtreeapps.com/</string>	
+    
+      <string name="start_button_text">Start Timer</string>
+  <string name="stop_button_text">Cancel Timer</string>
+  <string name="minutes_tag">Minutes</string>
+  <string name="seconds_tag">Seconds</string>
+  <string name="hours_tag">Hours</string>
+  <string name="select_a_time">No time selected</string>
+  <string name="timer_complete">Countdown completed</string>
+  <string name="timer_cancelled">Countdown cancelled</string>
+  <string name="timer_running">Countdown in progress</string>
+  <string name="timer_resumed">Countdown resumed</string>
+  <string name="timer_paused">Countdown paused</string>
+  <string name="notification_tip_complete">Select to set a new timer</string>
+  <string name="notification_tip_running">Select to view countdown timer</string>
+  <string name="please_select_sound">Using default alarm sound, please go to preferences to select a sound</string>
+  <string name="menu_preference">Preferences</string>
+  <string name="menu_about">About</string>
+  <string name="pref_vibrate">vibrate</string>
+  <string name="pref_alarmsound">alarmsound</string>
+  <string name="pref_repeat">repeat</string>
+  <string name="pref_flashled">flashled</string>
+  <string name="pref_flashled_color">flashled_color</string>
+  <string name="pref_show_persistent_notification">show_persistent_notification</string>
+  <string name="pref_snooze">snooze</string>
+  <string name="pref_timeout">timeout</string>
+  <string name="pref_wakescreen">wakescreen</string>
+  <string name="pref_category_alarm">Alarm Preferences</string>
+   
+  <string name="pref_alarmsound_title">Timer Alarm Sound</string>
+  <string name="pref_alarmsound_summary">This sound will play when the timer reaches zero</string>
+  
+  <string name="pref_vibrate_title">Vibrate on Alarm</string>
+  <string name="pref_vibrate_summaryon">Vibration is on</string>
+  <string name="pref_vibrate_summaryoff">Vibration is off</string>
+  
+  <string name="pref_flashled_title">Blink LED on Alarm</string>
+  <string name="pref_flashled_summaryon">LED will blink on alarm</string>
+  <string name="pref_flashled_summaryoff">LED will not blink on alarm</string>
+  
+  <string name="pref_flashled_color_title">LED Color</string>
+  <string name="pref_flashled_color_summary">The color the LED blinks if enabled</string>
+  
+  <string name="pref_wakescreen_title">Wake Screen</string>
+  <string name="pref_wakescreen_summaryon">The screen will wake on alarm</string>
+  <string name="pref_wakescreen_summaryoff">The screen will not wake on alarm</string>
+  
+  <string name="pref_timeout_title">Alarm Timeout</string>
+  <string name="pref_timeout_dialogtitle">Alarm Timeout (mins)</string>
+  <string name="pref_timeout_summary">The alarm will stop ringing after this time</string>
+  
+  <string name="pref_category_other">Other Preferences</string>
+  
+  <string name="pref_show_persistent_notification_title">Persistent Status Icon</string>
+  <string name="pref_show_persistent_notification_summaryon">Show a persistent status bar icon while timer is running</string>
+  <string name="pref_show_persistent_notification_summaryoff">Do not show a persistent status bar icon while timer is running</string>	
+  <string name="timer_too_long">Timer too long, maximum is 100 hours</string>
+  <string name="pause_button_text">Pause Timer</string>
+  <string name="resume_button_text">Resume Timer</string>
+  <string name="new_dialog_button">Go to App</string>
+  
+  <string name="pref_about_text">Created by: Adam K\nEmail: adam@everythingandroid.net\nBlog: http://www.everythingandroid.net\n\nA simple countdown timer alarm application.  Feel free to email me any comments, suggestions or bugs.\n\nCredits to Min Tran for the app icon.\n(http://min.frexy.com)</string>
+    
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.year11.babynote"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="5" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:icon="@drawable/babynote"
+        android:label="@string/app_name"
+        android:name=".BabyNoteApplication" >
+        <provider
+            android:authorities="com.google.provider.NotePad"
+            android:name=".provider.NotePadProvider" />
+
+        <activity android:name=".app.TodayActivity" >
+        </activity>
+        <activity
+            android:label="@string/title_notes_list"
+            android:name=".app.NotesList" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.google.note" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_note"
+            android:name=".app.NoteEditor"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Light" >
+
+            <!--
+                 This filter says that we can view or edit the data of
+                 a single note
+            -->
+            <intent-filter android:label="@string/resolve_edit" >
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="com.android.notepad.action.EDIT_NOTE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note" />
+            </intent-filter>
+
+            <!--
+                 This filter says that we can create a new note inside
+                 of a directory of notes.
+            -->
+            <intent-filter >
+                <action android:name="android.intent.action.INSERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.google.note" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/title_edit_title"
+            android:name=".app.TitleEditor"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateVisible" >
+
+            <!--
+                 This activity implements an alternative action that can be
+                 performed on notes: editing their title.  It can be used as
+                 a default operation if the user invokes this action, and is
+                 available as an alternative action for any note data.
+            -->
+            <intent-filter android:label="@string/resolve_title" >
+
+                <!--
+                     This is the action we perform.  It is a custom action we
+                     define for our application, not a generic VIEW or EDIT
+                     action since we are not a general note viewer/editor.
+                -->
+                <action android:name="com.android.notepad.action.EDIT_TITLE" />
+                <!-- DEFAULT: execute if being directly invoked. -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--
+                     ALTERNATIVE: show as an alternative action when the user is
+                     working with this type of data.
+                -->
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <!--
+                     SELECTED_ALTERNATIVE: show as an alternative action the user
+                     can perform when selecting this type of data.
+                -->
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+                <!-- This is the data type we operate on. -->
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.DiaryListActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:label="@string/title_edit_title"
+            android:name=".app.BabyProfileActivity" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name=".app.BabyChartActivity" />
+        <activity android:name=".app.SettingActivity" />
+        <activity android:name=".app.EventEditActivity" />
+        <activity android:name=".app.ProfileActivity" />
+        <activity android:name=".app.AlarmSelectActivity" />
+        <activity
+            android:name=".app.AlarmListActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".app.ReminderEditActivity" />
+        <activity
+            android:name=".app.GrowthDataActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".app.GalleryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".app.VaccinePlanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".app.HomeActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.GrowthActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <receiver
+            android:name=".app.receiver.AlarmReceiver"
+            android:process=":remote" >
+        </receiver>
+        <receiver android:name=".app.receiver.NetworkChangeReceiver" >
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:exported="false"
+            android:name=".app.service.BackupService" />
+    </application>
+
+</manifest>
